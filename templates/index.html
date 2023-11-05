@@ -1,11 +1,6 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<!-- Links -->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bagel+Fat+One">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify+Sans">
-
+{% block style %}
 <!-- CSS -->
 <style>
     .flex-container {
@@ -66,16 +61,18 @@
         margin: 12px 10px; /* Adjust the value to control the spacing */
     }
 </style>
+{% endblock %}
 
 <html>
+{% block head %}
 <!-- Head -->
-
 <head>
     <title>Healthy Weight Tracker</title>
 </head>
+{% endblock %}
 
+{% block body %}
 <!-- Body -->
-
 <body>
 
     <div class="flex-container">
@@ -91,9 +88,13 @@
     </div>
 
 </body>
+{% endblock %}
 
 </html>
 
+
+{% block script %}
 <!-- JavaScript -->
 <script>
 </script>
+{% endblock %}
