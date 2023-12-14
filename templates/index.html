@@ -83,7 +83,11 @@
 
         <div class="navbar-container">
             <p>about</p>
-            <p>login</p>
+            {% if not current_user %}
+                <p>login</p>
+            {% else %}
+                <p>logout</p>
+            {% endif %}
         </div>
     </div>
 
