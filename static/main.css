@@ -1,0 +1,20 @@
+.flex-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.navbar-container {
+    top: 100%;
+    display: flex;
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container p {
+    font-family: 'Pixelify Sans', serif;
+    font-size: 20px;
+    margin: 12px 10px; /* Adjust the value to control the spacing */
+}
