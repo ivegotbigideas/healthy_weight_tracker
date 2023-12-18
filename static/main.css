@@ -18,3 +18,7 @@
     font-size: 20px;
     margin: 12px 10px; /* Adjust the value to control the spacing */
 }
+
+a {
+    text-decoration: none;
+  }
