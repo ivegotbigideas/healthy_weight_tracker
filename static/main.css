@@ -1,9 +1,11 @@
+/* flex-container which fix everything on the center of the screen*/
 .flex-container {
     display: flex;
     height: 100vh;
     flex-direction: column;
 }
 
+/* navbar-container for the navigation bar */
 .navbar-container {
     top: 100%;
     display: flex;
@@ -19,18 +21,21 @@
     margin: 12px 10px; /* Adjust the value to control the spacing */
 }
 
+/* form-container for form on login page */
 .form-container p{
     font-family: 'Pixelify Sans', serif;
     font-size: 20px;
     margin: 3px 10px; /* Adjust the value to control the spacing */
 }
 
+/* submit-container for form submission button on login page */
 .submit-container input{
     font-family: 'Pixelify Sans', serif;
     font-size: 20px;
     margin: 3px 10px; /* Adjust the value to control the spacing */
 }
 
+/* a for hyperlinks */
 a {
     text-decoration: none;
   }
