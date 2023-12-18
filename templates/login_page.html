@@ -49,13 +49,13 @@
             <form method="POST" action="">
                 <div>{{ login_form.hidden_tag() }}</div>
                 <div class="form-group">
-                    <div class="label">{{ login_form.username.label }}</div>
-                    <div class="input">{{ login_form.username(size=20) }}</div>
+                    <div class="label"><p>{{ login_form.username.label }}</p></div>
+                    <div class="input"><p>{{ login_form.username(size=20) }}</p></div>
                 </div>
                 <br/>
                 <div class="form-group">
-                    <div class="label">{{ login_form.password.label }}</div>
-                    <div class="input">{{ login_form.password(size=20) }}</div>
+                    <div class="label"><p>{{ login_form.password.label }}</p></div>
+                    <div class="input"><p>{{ login_form.password(size=20) }}</p></div>
                 </div>
                 <br/>
                 <div class="submit-container">{{ login_form.submit() }}</div>
