@@ -22,13 +22,13 @@
 .form-container p{
     font-family: 'Pixelify Sans', serif;
     font-size: 20px;
-    margin: 12px 10px; /* Adjust the value to control the spacing */
+    margin: 3px 10px; /* Adjust the value to control the spacing */
 }
 
 .submit-container input{
     font-family: 'Pixelify Sans', serif;
     font-size: 20px;
-    margin: 12px 10px; /* Adjust the value to control the spacing */
+    margin: 3px 10px; /* Adjust the value to control the spacing */
 }
 
 a {
