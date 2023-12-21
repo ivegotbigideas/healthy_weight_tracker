@@ -21,5 +21,16 @@ def login_page():
     login_form = LoginForm()
     return render_template('login_page.html', login_form=login_form)
 
+class CreateAccountForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    confirm_password = PasswordField('Confirm Password', validators=[DataRequired()])
+    submit = SubmitField('Create')
+
+@app.route("/create_account", methods=['GET', 'POST'])
+def create_account():
+    create_account_form = CreateAccountForm()
+    return render_template('create_account.html', create_account_form=create_account_form)
+
 if __name__ == '__main__':
     app.run(debug=True)
