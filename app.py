@@ -16,10 +16,10 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     submit = SubmitField('Submit')
 
-@app.route("/login_page", methods=['GET', 'POST'])
-def login_page():
+@app.route("/login", methods=['GET', 'POST'])
+def login():
     login_form = LoginForm()
-    return render_template('login_page.html', login_form=login_form)
+    return render_template('login.html', login_form=login_form)
 
 class CreateAccountForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
