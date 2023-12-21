@@ -24,6 +24,9 @@ def login():
     login_form = LoginForm()
     return render_template("login.html", login_form=login_form)
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 class CreateAccountForm(FlaskForm):
     username = StringField("Username", validators=[DataRequired()])
